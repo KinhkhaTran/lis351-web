@@ -138,3 +138,46 @@ This audience was chosen because a portfolio website is primarily a professional
 - Location: images/
 - Dimensions: 600x400px
 - Source: Unsplash
+
+---
+
+### 4. Color Theme
+
+The color palette uses a modern, professional aesthetic with a calming blue as the primary color, complemented by neutral tones for readability and contrast.
+
+**Primary Color:**
+- Deep Blue: #2563EB
+- Used for buttons, links, and accent elements
+
+**Secondary Colors:**
+- Light Blue: #3B82F6
+- Used for hover states and highlights
+
+**Neutral Colors:**
+- Dark Gray (Text): #1F2937
+- Medium Gray (Secondary Text): #6B7280
+- Light Gray (Backgrounds): #F3F4F6
+- White (Base): #FFFFFF
+
+**Accent Color:**
+- Soft Teal: #14B8A6
+- Used sparingly for call-to-action elements
+
+Color palette generated using Adobe Color Wheel with an analogous color harmony scheme.
+
+---
+
+### 5. Sketch
+
+[Insert hand-drawn or digital sketch here]
+
+The page layout follows a standard landing page structure:
+
+**Layout Description:**
+- Header: Logo on the left, navigation links on the right
+- Hero Section: Full-width with centered headline, subhead, and button overlaying a background image
+- Features Section: Three equal-width columns side by side
+- Featured Content: Two-column layout with text on one side and image on the other
+- Secondary Blocks: Two equal-width cards side by side with images
+- Call-to-Action: Centered text with prominent button
+- Footer: Three-column layout with copyright, quick links, and social links
