@@ -3,105 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinhkha Tran | Personal Portfolio</title>
+    <title>Kinhkha Tran | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div>Kinhkha Tran</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#home" class="brand">Kinhkha<span class="dot">.</span></a>
+            <nav class="site-nav">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="home">
-            <h1>Creative Problem Solver</h1>
-            <p>Building meaningful digital experiences through thoughtful design and clean code.</p>
-            <a href="#portfolio">View My Work</a>
-            <img src="images/hero-background.jpg" alt="Abstract geometric shapes representing creativity and innovation">
+        <section id="home" class="hero">
+            <div class="container hero-content hero-flex">
+                <div class="hero-text">
+                    <h1>Software Engineer</h1>
+                    <p class="hero-subhead">Building full-stack applications, AI-powered solutions, and scalable systems at UW-Madison.</p>
+                    <a href="#portfolio" class="btn btn-dark">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/Kinhkha_Headshot.jpg" alt="Kinhkha Tran">
+                </div>
+            </div>
         </section>
 
         <!-- Features Section -->
-        <section id="skills">
-            <h2>What I Do</h2>
-
-            <div>
-                <img src="images/icon-design.svg" alt="Design icon">
-                <h3>Web Design</h3>
-                <p>Creating visually appealing and user-friendly interfaces that communicate effectively and engage visitors.</p>
-            </div>
-
-            <div>
-                <img src="images/icon-code.svg" alt="Code icon">
-                <h3>Development</h3>
-                <p>Transforming designs into responsive, accessible websites using modern HTML, CSS, and best practices.</p>
-            </div>
-
-            <div>
-                <img src="images/icon-strategy.svg" alt="Strategy icon">
-                <h3>Strategy</h3>
-                <p>Planning user experiences that align with goals, ensuring every element serves a purpose.</p>
+        <section id="skills" class="features">
+            <div class="container">
+                <h2 class="section-title">What I Do</h2>
+                <p class="section-lede">I build end-to-end software solutions using modern technologies and best practices.</p>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="icon"><img src="images/icon-fullstack.svg" alt="Full-Stack icon"></div>
+                        <h3>Full-Stack Development</h3>
+                        <p>Building web and mobile applications with React, Node.js, React Native, and cloud platforms like AWS, Azure, and GCP.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><img src="images/icon-ai.svg" alt="AI icon"></div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Developing AI-powered chatbots, prediction pipelines, and intelligent agents using Python, TensorFlow, and GPT integrations.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><img src="images/icon-data.svg" alt="Data icon"></div>
+                        <h3>Data & Backend</h3>
+                        <p>Designing ETL pipelines, databases, and APIs with MySQL, Firebase, Supabase, Splunk, and FastAPI.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Featured Content Section -->
-        <section id="portfolio">
-            <h2>Featured Project</h2>
-            <p>This capstone project showcases my ability to research user needs, design intuitive interfaces, and build accessible web solutions. The project involved conducting user interviews, creating wireframes, and developing a fully responsive website that improved task completion rates by focusing on clear navigation and content hierarchy.</p>
-            <img src="images/featured-project.jpg" alt="Screenshot of capstone project showing a clean dashboard interface with navigation sidebar and data visualization">
+        <section id="portfolio" class="featured">
+            <div class="container">
+                <h2 class="section-title section-title-large">Featured Project</h2>
+                <h3 class="project-title">Epic Systems Analysis Agent</h3>
+                <p class="section-lede">A multi-agent, AI-powered DevOps assistant built during my internship at UnitedHealth Group (Optum). Integrated GPT-4.1, RAG, vector databases, and multiple data sources (Splunk, ServiceNow, GitHub, Azure Cognitive Search), achieving a 50% reduction in data retrieval time. Ranked Top 10 nationally among intern submissions.</p>
+                <div class="media img-featured"></div>
+            </div>
         </section>
 
-        <!-- Secondary Content Blocks -->
-        <section id="about">
-            <h2>More About Me</h2>
-
-            <div>
-                <h3>Education</h3>
-                <p>Currently pursuing studies in Information Science, where I combine technical skills with a deep understanding of how people interact with information systems.</p>
-                <img src="images/education.jpg" alt="University campus building with students walking on tree-lined pathway">
-                <a href="#contact">Learn more about my background</a>
+        <!-- Second Featured Project -->
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Options Trading Analysis Tool</h2>
+                <p class="section-lede">Built a comprehensive options analysis tool using Python, React, and yfinance data. Features Sobol pricing models, SMA crossover signals, automated expiration selection, undervaluation detection, and 95% VaR risk calculations. Includes an interactive React frontend with visualizations of price vs. SMA trends for AAPL, AMZN, TGT, and TSLA.</p>
+                <div class="media img-options"></div>
             </div>
+        </section>
 
-            <div>
-                <h3>Interests</h3>
-                <p>Beyond academics, I enjoy exploring new technologies, contributing to open-source projects, and staying current with design trends through online communities.</p>
-                <img src="images/interests.jpg" alt="Laptop on desk with design software open, surrounded by notebooks and coffee">
-                <a href="#contact">Connect with me</a>
+        <!-- Experience Section -->
+        <section id="experience" class="secondary">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-lede">Professional software engineering experience across enterprise, startup, and nonprofit environments.</p>
+                <div class="secondary-grid">
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>Software Engineering Intern</h3>
+                            <p><strong>UnitedHealth Group - Optum TDP</strong><br>June 2025 - August 2025<br>Built the Epic Systems Analysis Agent, an AI-powered DevOps assistant achieving 50% reduction in data retrieval time. Ranked Top 10 nationally.</p>
+                            <a href="https://linkedin.com/in/kinhkha-tran" class="btn btn-outline">View Details</a>
+                        </div>
+                        <div class="card-image img-optum"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>Software Engineer</h3>
+                            <p><strong>WiscAI - AI Advisory & Solutions</strong><br>September 2025 - Present<br>Led development of 7 consumer iOS & Android apps. Designed AI-powered chatbots and prediction pipelines with React, Node.js, AWS, and GCP.</p>
+                            <a href="https://linkedin.com/in/kinhkha-tran" class="btn btn-outline">View Details</a>
+                        </div>
+                        <div class="card-image img-wiscai"></div>
+                    </div>
+                </div>
+                <div class="secondary-grid" style="margin-top: 26px;">
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>Undergraduate Software Engineer</h3>
+                            <p><strong>UW-Madison DoIT</strong><br>August 2024 - Present<br>Designed the NOVA help-desk portal used by 100+ IT agents with React, Node.js, and MySQL. Reduced recurring issues by 20-25%.</p>
+                            <a href="https://linkedin.com/in/kinhkha-tran" class="btn btn-outline">View Details</a>
+                        </div>
+                        <div class="card-image img-doit"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>Tech Lead / App Dev Chair</h3>
+                            <p><strong>UVSA-Midwest 501(c)(3)</strong><br>September 2023 - Present<br>Led development of the UVSA-Midwest Mobile App with React Native/Firebase/GCP, serving 13 member schools and 1,000+ students.</p>
+                            <a href="https://linkedin.com/in/kinhkha-tran" class="btn btn-outline">View Details</a>
+                        </div>
+                        <div class="card-image img-uvsa"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="featured">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <p class="section-lede">Computer Science at University of Wisconsin-Madison. GPA: 3.7/4.0, Dean's List. Expected graduation: May 2026.</p>
+                <div class="media img-uw"></div>
             </div>
         </section>
 
         <!-- Call to Action Section -->
-        <section id="contact">
-            <h2>Let's Work Together</h2>
-            <p>Have a project in mind or want to collaborate? I would love to hear from you.</p>
-            <a href="mailto:kinhkha@example.com">Get In Touch</a>
+        <section id="contact" class="cta">
+            <div class="container cta-inner">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-lede">Interested in collaborating or have a project in mind? I'd love to connect.</p>
+                <a href="mailto:Kkhatran@gmail.com" class="btn btn-dark">Get In Touch</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>Copyright 2025 Kinhkha Tran. All rights reserved.</p>
-        <nav>
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <h3>Connect</h3>
-            <ul>
-                <li><a href="https://linkedin.com">LinkedIn Profile</a></li>
-                <li><a href="https://github.com">GitHub Repository</a></li>
-            </ul>
-        </nav>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <p>Copyright 2025 Kinhkha Tran. All rights reserved.</p>
+                <p>Computer Science @ UW-Madison</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#experience">Experience</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://linkedin.com/in/kinhkha-tran">LinkedIn</a>
+                    <a href="https://github.com/KinhkhaTran">GitHub</a>
+                    <a href="mailto:Kkhatran@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
